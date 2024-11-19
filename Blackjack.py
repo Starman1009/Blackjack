@@ -17,8 +17,7 @@ def deal(n):
     return dealed #once the loop has made the dealed deck, the function will return dealed which is now changed
 cards_dealt = deal(7) #cards is just the returned value of now many iterations the loop went through
 card = cards_dealt[0]
-ranks_of_cards = card
+ranks_of_cards = card[1]
 
 print(card)
-
 print(ranks_of_cards)
