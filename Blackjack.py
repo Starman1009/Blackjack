@@ -8,12 +8,13 @@ def shuffle():
     random.shuffle(cards)
     
 shuffle()
+#This function will deal n-1 ammount of cards
 def deal(n):
-    backlog = []
-    for turns in range(n):
-        picked = cards.pop()#.pop() will remove AND RETURN THE THING GETTING REMOVEDpicked
-        backlog.append(picked)
-    return backlog
-card = deal(7)
+    dealed = [] #The turns variable is simply a loop counter n-1
+    for turns in range(n): #This loop will have each iterable "turns" that returns what ever thing it
+        picked = cards.pop()#.pop() will remove AND RETURN THE THING GETTING REMOVED 
+        dealed.append(picked) #i am adding the cards picked into dealed
+    return dealed #once the loop has made the dealed deck, the function will return dealed which is now changed
+card = deal(7) #cards is just the returned value of now many iterations the loop went through
 print(card)
 print("I LOVE BRIANNA")
