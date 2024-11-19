@@ -16,3 +16,4 @@ def deal(n):
     return backlog
 card = deal(7)
 print(card)
+print("I LOVE BRIANNA")
