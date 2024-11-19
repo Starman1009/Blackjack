@@ -3,7 +3,7 @@ import random
 suits = ["hearts", "diamonds", "clubs", "spades"]
 ranks = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 cards = [[suit, rank] for suit in suits for rank in ranks]
-print(len(cards))
+
 def shuffle():
     random.shuffle(cards)
     
@@ -15,6 +15,10 @@ def deal(n):
         picked = cards.pop()#.pop() will remove AND RETURN THE THING GETTING REMOVED 
         dealed.append(picked) #i am adding the cards picked into dealed
     return dealed #once the loop has made the dealed deck, the function will return dealed which is now changed
-card = deal(7) #cards is just the returned value of now many iterations the loop went through
+cards_dealt = deal(7) #cards is just the returned value of now many iterations the loop went through
+card = cards_dealt[0]
+ranks_of_cards = card
+
 print(card)
-print("I LOVE BRIANNA")
+
+print(ranks_of_cards)
