@@ -22,4 +22,4 @@ ranks_of_cards = card[1]
 print(card)
 print(ranks_of_cards)
 
-print("BRYAN IS A BAKA")
+print("BRYAN IS A BAKA OWO")

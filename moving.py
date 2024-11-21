@@ -47,7 +47,6 @@ while True:
     # Draw the white rectangle
     pygame.draw.rect(screen, ORANGE, (rect_x, rect_y, rect_width, rect_height))
     pygame.draw.rect()
-    screen, green, (400, 300, 50, 50)
     # Update the display
     pygame.display.flip()
 
