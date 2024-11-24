@@ -56,3 +56,4 @@ else:
 person.hello()
 if isinstance(person, American):
     person.america()
+print("Goodbye!")
